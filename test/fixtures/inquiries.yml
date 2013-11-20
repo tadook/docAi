@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  age: 1
+  sex: MyString
+  weight: 1.5
+  height: 1.5
+
+two:
+  age: 1
+  sex: MyString
+  weight: 1.5
+  height: 1.5
