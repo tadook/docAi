@@ -6,6 +6,9 @@ DocAi::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  get  'inquiries/new' => 'inquiries#new', as: :new_inquiry
+  post 'inquiries' => 'inquiries#create', as: :inquiries
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -40,7 +43,7 @@ DocAi::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

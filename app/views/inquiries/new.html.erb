@@ -1,0 +1,12 @@
+<h1>問診票</h1>
+<%= form_for :inquiry, url: inquiries_path do |f| %>
+  <p><%= f.label :age %>: <%= f.text_field :age, :style => 'width: 30px' %></p>
+  <p>
+    <%= f.label :sex %><br>
+    <%= radio_button_tag :inquiry, 'sex', :checked => true%> Male
+    <%= radio_button_tag :inquiry, 'sex' %> Female
+  </p>
+  <p><%= f.label :height %>: <%= f.text_field :height, :style => 'width: 30px' %></p>
+  <p><%= f.label :weight %>: <%= f.text_field :weight, :style => 'width: 30px' %></p>
+  <p><%= f.submit '送信する' %></p>
+<% end %>
