@@ -8,6 +8,7 @@ DocAi::Application.routes.draw do
 
   get  'inquiries/new' => 'inquiries#new', as: :new_inquiry
   post 'inquiries' => 'inquiries#create', as: :inquiries
+  get  'inquiries/:id' => 'inquiries#show', as: :inquiry
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

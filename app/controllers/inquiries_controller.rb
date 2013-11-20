@@ -5,7 +5,11 @@ class InquiriesController < ApplicationController
   def create
     @inquiry = Inquiry.new(inquiry_params)
     @inquiry.save
-    redirect_to @inqiury
+    redirect_to @inquiry
+  end
+
+  def show
+      @inquiry = Inquiry.find(params[:id])
   end
 
   private
