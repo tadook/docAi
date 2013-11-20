@@ -12,6 +12,10 @@ class InquiriesController < ApplicationController
     @inquiry = Inquiry.find(params[:id])
   end
 
+  def index
+    @inquiries = Inquiry.all
+  end
+
   private
     def inquiry_params
       params.require(:inquiry).permit(:age, :sex, :weight, :height)
