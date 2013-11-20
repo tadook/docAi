@@ -13,7 +13,6 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
-config/initializers/secret_token.rb
 
 ## Environment normalisation:
 /.bundle
@@ -32,3 +31,6 @@ config/initializers/secret_token.rb
 Session.vim
 .netrwhist
 *~
+
+# Ignore application configuration
+/config/application.yml
